@@ -1,0 +1,326 @@
+@media screen and (max-width: 900px) {
+
+	.all-page {
+		max-width: 768px;
+		overflow-x: hidden; 
+	}
+	
+	/* ==============HEADER=========== */
+
+	.header {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 90px;
+		padding: 0 60px;
+		background-image: url(./assets/img/bg768.jpg);
+		background-position: center 0;
+		background-repeat: no-repeat;
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.nav-link.text-theme {
+		color: black;
+	}
+
+	.switch-lng {
+		margin-left: auto;
+		margin-right: 21px;
+	}
+
+	.slash {
+		margin-right: 11px;
+	}
+
+	.ligth {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.popup .list-nav {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		position: relative;
+		font-size: 34.8px;
+		left: 127px;
+		top: 139px;
+		padding: 0;
+		height: 50%;
+		transition: 0.5s ease-in-out;
+		margin-top: -2px;
+	}
+
+	.popup .list-nav li:first-child {
+		margin-bottom: -12px;
+	}
+	.popup .list-nav li:nth-child(2) {
+		margin-bottom: -10px;
+	}
+
+	.popup .list-nav li:nth-child(3) {
+		margin-bottom: -11px;
+	}
+
+	.popup .list-nav li:last-child {
+		margin-top: -10px;
+	}
+
+
+
+
+	.hamburger {
+		display: block;
+		width: 50px;
+		height: 50px;
+		margin-right: 4px;
+		cursor: pointer;
+		z-index: 60;
+	}
+
+	.line {
+		width: 50px;
+		height: 3px;
+		background-color: #ecf0f1;
+		margin: 10px auto;
+		z-index: 70;
+		transition: all 0.5s ease-in-out;
+			}
+
+	.hamburger.open .line1 {
+		transform: rotate(-405deg) translate(-8px, 10px);
+	}
+	.hamburger.open.hamburger.open.text-theme .line1 {
+		/* transform: rotate(-405deg) translate(-8px, 10px); */
+		background-color: black;
+	}
+
+	.hamburger.open .line2 {
+		opacity: 0;
+	}
+	.hamburger.open .line3 {
+		transform: rotate(405deg) translate(-8px, -10px);
+	}
+
+	.hamburger.open.text-theme .line3 {
+		/* transform: rotate(405deg) translate(-8px, -10px); */
+		background-color: black;
+	}
+
+	.popup {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		width: 80.7%;
+		height: 100%;
+		background-color: black;
+		transition: all 0.5s ease-in-out;
+		z-index: 50;
+		display: flex;
+	}
+
+	.popup.active {
+		right: 0;
+	} 
+
+	.popup.ligth-theme {
+		background-color: white;
+	}
+
+	@media screen and (max-width:619px) {
+		.popup {
+			width: 100%;
+		}
+	
+		.popup .list-nav {
+			justify-content: center;
+			align-items: flex-start;
+			left: 0;
+			top: 0;
+			padding: 150px;
+		}	
+	}
+
+/* ===============HERO==================== */
+.hero {
+	height: 500px;
+	background: url('./assets/img/bg768.jpg');
+	background-position: center -90px;
+  background-repeat: no-repeat;
+}
+.hero-page {
+  top: 77px;
+	left: 39px;
+}
+.hero-name {
+	margin-bottom: 18px;
+	font-size: 32px;
+	font-weight: 400;
+}
+.hero-text {
+	line-height: 1.3;
+	margin-bottom: 56px;
+	width: 400px;
+}
+
+.title-container {
+	padding: 80px 0 45px;
+}
+.section-title {
+	box-sizing: border-box;
+	padding: 0 20px 0 20px;
+	font-size: 32px;
+}
+
+/* ===================SKILLS=============== */
+
+.skills {
+	min-height: 729px;
+}
+
+.skill-list {
+	display: grid;
+  grid: 1fr 1fr / repeat(auto-fit, 320px);
+  justify-content: center;
+  justify-items: center;
+  gap: 20px 23px;
+}
+
+.skill-item-img {
+	margin-bottom: 10px;
+}
+
+.skill-item-description {
+	padding: 0 20px;
+	line-height: 1.3;
+}
+
+/* ====================PORTFOLIO=============== */
+
+.portfolio {
+	min-height: 3870px;
+}
+
+.portfolio-list {
+	flex-wrap: wrap;
+	min-width: 445px;
+	width: 445px;
+	margin-top: 6px;
+}
+
+.portfolio-photos {
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+/* =============VIDEO================== */
+
+.video {
+	height: 628px;
+	padding: 0;
+}
+
+.video-item  {
+	height: 418px;
+	/* position: relative; */
+	margin-top: 5px;
+	background-position: -5px 0px;
+    background-size: auto 418px;
+}
+
+.video-button {
+	left: calc(50% - 5.2em);
+	top: calc(50% - 2.7em);
+	width: 18%;
+	height: 18% ;
+} 
+
+/* ===============PRICE================== */
+
+.price {
+	min-height: 1905px;
+}
+.price-list {
+	margin-top: 5px;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 50px;
+
+}
+.price-item {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	width: 420px;
+}
+
+.price-button {
+	margin: 0 97px;
+}
+
+/* =================CONTACTS===================== */
+
+.contacts {
+	height: 600px;
+	/* width: 768px; */
+	background-size: auto 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.contacts-form {
+	left: 0;
+	top: 0;
+	position: relative;
+	width: 450px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 50px;
+	
+}
+.form-name {
+	font-size: 32px;
+}
+.form-email {
+	width: 100%;
+}
+.form-tel {
+	width: 100%;
+}
+.form-message {
+	width: 100%;
+}
+.form-button {
+	align-self: center;
+}
+
+/* =========FOOTER============================= */
+
+.footer {
+	min-height: 190px;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;	
+	padding-bottom: 70px;
+}
+
+.github {
+	padding-left: 10px;
+	margin-top: -4px;
+}
+.rsschool {
+	padding-right: 6px;
+	margin-top: -8px;
+}
+
+}
+

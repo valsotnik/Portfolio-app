@@ -1,0 +1,98 @@
+@media screen and (max-width: 540px) {
+	
+	.all-page {
+		max-width: 320px;
+		overflow-x: hidden;
+	}
+	.header {
+		padding: 0 5px;
+	}
+	.ligth {
+		padding-left: 10px;
+		padding-right: 20px;
+	}
+
+	.hero-page {
+		max-width: 320px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0;
+		top: 40px;
+		left: 0;
+	}
+	.hero-name {
+		font-size: 40px;
+	}
+	.hero-text {
+		width: 300px;
+	}
+	.hero-button {
+		width: 320px;
+	}
+	.skills {
+		padding: 0;
+	}
+	.portfolio {
+		min-height: 2390px;
+		box-sizing: content-box;
+		padding: 0;
+	}
+	.portfolio-list {
+		/* flex-wrap: wrap; */
+		min-width: 320px;
+		width: 320px;
+		justify-content: center;
+		box-sizing: content-box;
+	}
+	.portfolio-photos {
+		padding: 0;
+		width: 320px;
+		gap: 0;
+	}
+	.portfolio-photos-img {
+		width: 320px;
+		
+	}
+	.video-button {
+		left: calc(50% - 3.5em);
+		top: calc(50% - 3.5em);
+		width: 30%;
+		height: 30% ;
+	}
+	.price-item {
+		width: 320px;
+	}
+	.price-button {
+		width: 100%;
+		margin: 0;
+	}
+	.contacts {
+		left: 0;
+		width: 320px;
+	}
+	.contacts-form {
+		left: 0;
+	}
+	.form-name {
+		margin: 0;
+	}
+	.form-email {
+		width: 320px;
+	}
+	.form-tel {
+		width: 320px;
+	}
+	.form-message {
+		width: 320px;
+	}
+	.form-button {
+		margin: 0;
+		width: 320px;
+	}
+
+	.popup .list-nav {
+		padding: 200px 100px;
+	}
+}
